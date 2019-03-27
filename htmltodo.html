@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Html, Head and body tags understanding</title>
+<title>Head's elements</title>
 <style>
 body {background-color: powderblue;}
 h1 {color: red;}
 p {color: blue;}
 </style>
+<script>
+	function myFunction() {
+		document.getElementById("demo").innerHTML = "Hello HTML";
+	}
+</script>
 </head>
 <body>
 
 <h1>My First Page</h1>
 <p>Studying the basics</p>
 <hr/>
-<h2>A secondary header.</h2>
+<h2>A third task.</h2>
+<p id="demo">Head's elements</p>
+<button type="button" onclick="myFunction()">Try it</button>
 
 
 </body>
