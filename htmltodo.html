@@ -32,9 +32,19 @@ tr:nth-child(even) {
 <table>
 	<caption>HTML Table</caption>
   <tr>
-    <th>Company</th>
-    <th>Contact</th>
-    <th>Country</th>
+    <th>
+    	<svg height="60" width="200">
+  <text x="0" y="15" fill="red" transform="rotate(30 20,40)">Company</text>
+</svg>
+</th>
+    <th><svg height="60" width="200">
+  <text x="0" y="15" fill="red" transform="rotate(30 20,40)">Contact</text>
+</svg>
+</th>
+    <th><svg height="60" width="200">
+  <text x="0" y="15" fill="red" transform="rotate(30 20,40)">Country</text>
+</svg>
+</th>
   </tr>
   <tr>
     <td>Alfreds Futterkiste</td>
@@ -76,8 +86,26 @@ tr:nth-child(even) {
  <!-- First group of tags -->
       <div style = "color:red">
          <h3>This is first group</h3>
-     <p>Following is a list of vegetables</p>
-         
+
+<svg height="130" width="500">
+  <rect width="300" height="100" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" />
+  <text fill="#ffffff" font-size="15" font-family="Verdana" x="50" y="86">Following is a list of vegetables</text>
+</svg>
+<svg height="150" width="500">
+  <defs>
+    <radialGradient id="grad1" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:0" />
+      <stop offset="100%" style="stop-color:rgb(0,0,255);stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  <ellipse cx="200" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+  Sorry, your browser does not support inline SVG.
+</svg>
+<svg height="100" width="100">
+  <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+  Sorry, your browser does not support inline SVG.  
+</svg> 
+             
         <nav>
          <ul>
             <li>Beetroot</li>
