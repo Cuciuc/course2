@@ -302,33 +302,23 @@
   <form action="/action_page.php">
     First name:<br>
     <input type="text" name="firstname" value="Mickey">
-    <br><br>
+    <br>
+    Last name:<br>
+    <input type="text" name="lastname" value="Mouse"><br>
+    Birthday:<br>
+    <input type="date" name="bday"><br>
+    E-mail:<br>
+    <input type="email" name="email"><br><br>
     <input type="submit" value="Submit">
   </form>
   <form>
-    First name:<br>
-    <input type="text" name="firstname">
-    <br>
-    Last name:<br>
-    <input type="text" name="lastname">
-  </form>
-
+   
   <form>
     <input type="radio" name="gender" value="male" checked>Male<br>
     <input type="radio" name="gender" value="female">Female<br>
     <input type="radio" name="gender" value"other">Other
   </form>
-
-  <form action="/action_page.php">
-    First name:<br>
-    <input type="text" name="firstname" value="Mickey">
-    <br>
-    Last name:<br>
-    <input type="text" name="lastname" value="Mouse">
-    <br>
-    <br>
-    <input type="submit" value="Submit">
-  </form>
+ 
   <form action="/my-handling-form-page" method="post">
   <div>
     <label for="name">Name:</label>
@@ -384,6 +374,21 @@
     <input type="submit">
   </form>
 
+<form>
+  <input type="checkbox" name="vehicle1" value="Bike">I have a bike<br>
+  <input type="checkbox" name="vehicle2" value="Car">I have a car<br><br>
+  <input type="submit">
+</form>
+
+<form action="/action_page.php">
+  Enter a date before 1980-01-01:<br><br>
+  <input type="date" name="bday" max="1979-12-31"><br><br>
+  Enter a date after 2000-01-01:<br><br>
+  <input type="date" name="bday" min="2000-01-02"><br><br>
+  <input type="submit">
+</form>
+
+<form>
 <h6><span>Contact Me</span></h6>
   <form>
   <input name="name" type="text" /><br/>
@@ -391,6 +396,7 @@
   <textarea name="message"></textarea>
   <input type="submit" value="SEND" class="submit" />
   </form>
+
 <p>Paragraphs</p> <!-- Use <br /> to create a line break within a paragraph -->
 
 <!-- Wrap these around text you want to style -->
