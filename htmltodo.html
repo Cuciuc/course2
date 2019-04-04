@@ -287,7 +287,7 @@
 
 </script>
 <h5>Diffirent types of form</h5>
-  <form action="/action_page.html">
+  <form action="/action_page.html" method="post">
     <select name="cars">
       <option value="volvo">Volvo</option>
       <option value="saab">Saab</option>
@@ -296,21 +296,21 @@
     </select>
     <br>
     Quantity:<br>
-    <input type="number" name="quantity" min="0" max="100" step="10" value="30" 
+    <input type="number" name="quantity" min="0" max="100" step="10" value="30">
     <br>
     <input type="Submit" onclick="alert('Congratulations')">
   </form>
 
   <form action="/action_page.php">
     First name:<br>
-    <input type="text" name="firstname" value="Mickey">
+    <input type="text" name="firstname" value="Mickey" readonly>
     <br>
     Last name:<br>
-    <input type="text" name="lastname" value="Mouse"><br>
+    <input type="text" name="lastname" value="Mouse" maxlength="10"><br>
     Birthday:<br>
     <input type="date" name="bday"><br>
     E-mail:<br>
-    <input type="email" name="email"><br>
+    <input type="email" name="email" autocomplete="off"><br>
     Telephone:<br>
     <input type="tel" name="usrtel"><br>
     Add your photo:<br>
@@ -323,14 +323,15 @@
     <input type="url" name="homepage"><br>
     Select your favorite color:<br>
     <input type="color" name="favcolor" value="#ff0000"><br><br>
-    <input type="submit" value="Submit">
+    <input type="submit" formnovalidate value="Submit without validation">
   </form>
   <form>
    
   <form>
     <input type="radio" name="gender" value="male" checked>Male<br>
     <input type="radio" name="gender" value="female">Female<br>
-    <input type="radio" name="gender" value"other">Other
+    <input type="radio" name="gender" value="other">Other<br>
+    <input type="image" src="img_submit.gif" alt="Submit" width="48" height="48">
   </form>
  
   <form action="/my-handling-form-page" method="post">
