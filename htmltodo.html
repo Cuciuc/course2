@@ -297,22 +297,27 @@
 
     </script>
     <h5 style="font-family: serif;">Diffirent types of form</h5>
-      <form action="/action_page.html" method="post">
-        <fieldset>
-          <legend>Cars</legend>
-        <select name="cars">
-          <option value="volvo">Volvo</option>
-          <option value="saab">Saab</option>
-          <option value="fiat">Fiat</option>
-          <option value="audi">Audi</option>
+    <form action="./action_page.html" method="get">
+      <fieldset>
+        <legend>Cars</legend>
+        <select name="students">
+          <option value="Jora">Vengher Jora</option>
+          <option value="Kolea">Josu Kolea</option>
+          <option value="Sasha">Racu Sasha</option>
+          <option value="Tolea">Sus Tolea</option>
         </select>
         <br>
-        Quantity:<br>
-        <input type="number" name="quantity" min="0" max="100" step="10" value="30">
+        Age:<br>
+        <input type="number" name="age" min="17" max="100" value="18">
+        Course:<br>
+        <input type="number" name="course" min="1" max="4" value="1">
         <br><br>
-        <input type="Submit" onclick="alert('Congratulations')">
-        </fieldset>
-      </form>
+        <input type="submit" value="отправить заявку">
+        <input type="button" value="проверить на складе">
+        <button type="button">My Favorite text</button>
+        <button type="submit" value="отправить">Send request</button>
+      </fieldset>
+    </form>
 
       <form action="/action_page.php">
         First name:<br>
