@@ -1,446 +1,444 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Head's elements</title>
-<style>
-  body {
-  background-color: powderblue;
-  }
-  h1 {
-  color: red;
-  }
-  p {
-  color: blue;
-  }
-  p.important {
-    color: green;
-    background-color: red;
-  }
-  table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-  }
-  td, 
-  th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-  }
-  tr:nth-child(even) {
-  background-color: #dddddd;
-  }
-  form {
-  /* Just to center the form on the page */
-  margin: 0 auto;
-  width: 400px;
-  /* To see the outline of the form */
-  padding: 1em;
-  border: 1px solid #CCC;
-  border-radius: 1em;
-  }
+  <head>
+    <title>Head's elements</title>
+    <style>
+      body {
+        background-color: powderblue;
+      }
+      h1 {
+        color: red;
+      }
+      p {
+        color: blue;
+      }
+      p.important {
+        color: green;
+        background-color: red;
+      }
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+      td, 
+      th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+      form {
+        /* Just to center the form on the page */
+        margin: 0 auto;
+        width: 400px;
+        /* To see the outline of the form */
+        padding: 1em;
+        border: 1px solid #CCC;
+        border-radius: 1em;
+      }
 
-  form div + div {
-  margin-top: 1em;
-  }
+      form div + div {
+        margin-top: 1em;
+      }
 
-  label {
-  /* To make sure that all labels have the same size and are properly aligned */
-  display: inline-block;
-  width: 90px;
-  text-align: right;
-  }
+      label {
+        /* To make sure that all labels have the same size and are properly aligned */
+        display: inline-block;
+        width: 90px;
+        text-align: right;
+      }
 
-  input, textarea {
-  /* To make sure that all text fields have the same font settings
-   By default, textareas have a monospace font */
-  font: 1em sans-serif;
+      input, textarea {
+        /* To make sure that all text fields have the same font settings
+         By default, textareas have a monospace font */
+        font: 1em sans-serif;
 
-  /* To give the same size to all text fields */
-  width: 300px;
-  box-sizing: border-box;
+        /* To give the same size to all text fields */
+        width: 300px;
+        box-sizing: border-box;
 
-  /* To harmonize the look & feel of text field border */
-  border: 1px solid #999;
-  }
+        /* To harmonize the look & feel of text field border */
+        border: 1px solid #999;
+      }
 
-  input:focus, textarea:focus {
-  /* To give a little highlight on active elements */
-  border-color: #000;
-  background-color: yellow;
-  }
+      input:focus, textarea:focus {
+        /* To give a little highlight on active elements */
+        border-color: #000;
+        background-color: yellow;
+      }
 
-  textarea {
-  /* To properly align multiline text fields with their labels */
-  vertical-align: top;
+      textarea {
+        /* To properly align multiline text fields with their labels */
+        vertical-align: top;
 
-  /* To give enough room to type some text */
-  height: 5em;
-  }
+        /* To give enough room to type some text */
+        height: 5em;
+      }
 
-  .button {
-  /* To position the buttons to the same position of the text fields */
-  padding-left: 90px; /* same size as the label elements */
-  }
+      .button {
+        /* To position the buttons to the same position of the text fields */
+        padding-left: 90px; /* same size as the label elements */
+      }
 
-  button {
-  /* This extra margin represent roughly the same space as the space
-   between the labels and their text fields */
-  margin-left: .5em;
-  }
-</style>
-  <script>
-  	function myFunction() {
-  		document.getElementById("demo").innerHTML = "Hello HTML";
-  	}
-  </script>
-</head>
-<body>
-<header role="banner">
+      button {
+        /* This extra margin represent roughly the same space as the space
+         between the labels and their text fields */
+        margin-left: .5em;
+      }
+    </style>
+    <script>
+      	function myFunction() {
+      		document.getElementById("demo").innerHTML = "Hello HTML";
+      	}
+    </script>
+  </head>
+  <body>
+    <header role="banner"></header>
 
-<table>
-  <caption>HTML Table</caption>
-  <tr>
-  <th>
-	<svg height="60" width="200">
-  <text x="0" y="15" fill="red" transform="rotate(30 20,40)">Company</text>
-  </svg>
-  </th>
-  <th>
-    <svg height="60" width="200">
-    <text x="0" y="15" fill="red" transform="rotate(30 20,40)">Contact</text>
+    <table>
+      <caption>HTML Table</caption>
+      <tr>
+        <th>
+      	<svg height="60" width="200">
+        <text x="0" y="15" fill="red" transform="rotate(30 20,40)">Company</text>
+        </svg>
+        </th>
+        <th>
+          <svg height="60" width="200">
+          <text x="0" y="15" fill="red" transform="rotate(30 20,40)">Contact</text>
+          </svg>
+        </th>
+        <th>
+          <svg height="60" width="200">
+          <text x="0" y="15" fill="red" transform="rotate(30 20,40)">Country</text>
+          </svg>
+        </th>
+      </tr>
+      <tr>
+        <td>Alfreds Futterkiste</td>
+        <td>Maria Anders</td>
+        <td>Germany</td>
+      </tr>
+      <tr>
+        <td>Centro comercial Moctezuma</td>
+        <td>Francisco Chang</td>
+        <td>Mexico</td>
+      </tr>
+        <tr>
+        <td>Ernst Handel</td>
+        <td>Roland Mendel</td>
+        <td>Austria</td>
+      </tr>
+      <tr>
+        <td>Island Trading</td>
+        <td>Helen Bennett</td>
+        <td>UK</td>
+      </tr>
+      <tr>
+        <td>Laughing Bacchus Winecellars</td>
+        <td>Yoshi Tannamuri</td>
+        <td>Canada</td>
+      </tr>
+      <tr>
+        <td>Magazzini Alimentari Riuniti</td>
+        <td>Giovanni Rovelli</td>
+        <td>Italy</td>
+      </tr>
+    </table>
+
+    <hr/>
+    <h2>A <span style="color: green">third</span> task.</h2>
+    <p id="demo">Head's elements</p>
+    <button type="button" onclick="myFunction()">Try it</button>
+      <!-- First group of tags -->
+      <div style = "color:red">
+    <p>
+      <a href="course2.asp"><img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;border:0;">
+      </a>
+    </p>
+
+    <svg height="130" width="500">
+      <rect width="300" height="100" style="fill: rgb(0,0,255); stroke-width: 3; stroke: rgb(0,0,0)" />
+      <text fill="#ffffff" font-size="15" font-family="Verdana" x="50" y="86">Following is a list of vegetables</text>
     </svg>
-  </th>
-  <th>
-    <svg height="60" width="200">
-    <text x="0" y="15" fill="red" transform="rotate(30 20,40)">Country</text>
+    <svg height="150" width="500">
+      <defs>
+        <radialGradient id="grad1" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+          <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:0" />
+          <stop offset="100%" style="stop-color:rgb(0,0,255);stop-opacity:1" />
+        </radialGradient>
+      </defs>
+      <ellipse cx="200" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+      Sorry, your browser does not support inline SVG.
     </svg>
-  </th>
-  </tr>
-  <tr>
-    <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
-  </tr>
-  <tr>
-    <td>Centro comercial Moctezuma</td>
-    <td>Francisco Chang</td>
-    <td>Mexico</td>
-  </tr>
-    <tr>
-    <td>Ernst Handel</td>
-    <td>Roland Mendel</td>
-    <td>Austria</td>
-  </tr>
-  <tr>
-    <td>Island Trading</td>
-    <td>Helen Bennett</td>
-    <td>UK</td>
-  </tr>
-  <tr>
-    <td>Laughing Bacchus Winecellars</td>
-    <td>Yoshi Tannamuri</td>
-    <td>Canada</td>
-  </tr>
-  <tr>
-    <td>Magazzini Alimentari Riuniti</td>
-    <td>Giovanni Rovelli</td>
-    <td>Italy</td>
-  </tr>
-</table>
+    <svg height="100" width="100">
+      <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+      Sorry, your browser does not support inline SVG.  
+    </svg> 
+    <svg width="400" height="180">
+      <rect x="50" y="20" rx="20" ry="20" width="150" height="150" style="fill:blue; stroke:pink; stroke-width:5; fill-opacity:0.1; stroke-opacity:0.9"/>
+    </svg>
+    <svg width="300" height="200">
+      <polygon points ="100,10 40, 198 190, 78 10, 78 160, 198" style="fill:lime; stroke:purple; stroke-width:5; fill-rule:evenodd;"/>
+    </svg> 
 
-<hr/>
-<h2>A <span style="color: green">third</span> task.</h2>
-<p id="demo">Head's elements</p>
-<button type="button" onclick="myFunction()">Try it</button>
-  <!-- First group of tags -->
-  <div style = "color:red">
-<p>
-  <a href="course2.asp"><img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;border:0;">
-  </a>
-</p>
+    <ul>
+      <li>Beetroot</li>
+      <li>Ginger</li>
+      <li>Potato</li>
+      <li>Radish</li>
+    </ul>
 
-<svg height="130" width="500">
-  <rect width="300" height="100" style="fill: rgb(0,0,255); stroke-width: 3; stroke: rgb(0,0,0)" />
-  <text fill="#ffffff" font-size="15" font-family="Verdana" x="50" y="86">Following is a list of vegetables</text>
-</svg>
-<svg height="150" width="500">
-  <defs>
-    <radialGradient id="grad1" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
-      <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:0" />
-      <stop offset="100%" style="stop-color:rgb(0,0,255);stop-opacity:1" />
-    </radialGradient>
-  </defs>
-  <ellipse cx="200" cy="70" rx="85" ry="55" fill="url(#grad1)" />
-  Sorry, your browser does not support inline SVG.
-</svg>
-<svg height="100" width="100">
-  <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
-  Sorry, your browser does not support inline SVG.  
-</svg> 
-<svg width="400" height="180">
-  <rect x="50" y="20" rx="20" ry="20" width="150" height="150" style="fill:blue; stroke:pink; stroke-width:5; fill-opacity:0.1; stroke-opacity:0.9"/>
-</svg>
-<svg width="300" height="200">
-  <polygon points ="100,10 40, 198 190, 78 10, 78 160, 198" style="fill:lime; stroke:purple; stroke-width:5; fill-rule:evenodd;"/>
-</svg>
-             
-  <nav>
-<ul>
-  <li>Beetroot</li>
-  <li>Ginger</li>
-  <li>Potato</li>
-  <li>Radish</li>
-</ul>
-  </nav>
-</div>
-<ul style="list-style-type:circle">
-  <li>Coffee</li>
-  <li>Tea</li>
-  <li>Milk</li>
-</ul> 
-<h4>Heading 4</h4>  <!-- Mailchimp only uses up to four headings -->
-  <article> 
-    <section> 
-      <p>Once article can have multiple sections</p>
-    </section> 
-  </article> 
-<aside> 
-    <p>This is  aside part of the web page</p> 
-</aside> 
-   
-<footer> 
-    <p>Created by <a href = "https://tutorialspoint.com/">Tutorials Point</a></p> 
-</footer> 
-<canvas id="canvas" width="400" height="400" style="background-color:#333">
-</canvas>
+    </div>
+    <ul style="list-style-type:circle">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul> 
+    <h4>Heading 4</h4>  <!-- Mailchimp only uses up to four headings -->
+      <article> 
+        <section> 
+          <p>Once article can have multiple sections</p>
+        </section> 
+      </article> 
+    <aside> 
+        <p>This is  aside part of the web page</p> 
+    </aside> 
+       
+    <footer> 
+        <p>Created by <a href = "https://tutorialspoint.com/">Tutorials Point</a></p> 
+    </footer> 
+    <canvas id="canvas" width="400" height="400" style="background-color:#333">
+    </canvas>
 
-<script>
-  var canvas = document.getElementById("canvas");
-  var ctx = canvas.getContext("2d");
-  var radius = canvas.height / 2;
-  ctx.translate(radius, radius);
-  radius = radius * 0.90
-  drawClock();
-  setInterval(drawClock, 1000);
+    <script>
+      var canvas = document.getElementById("canvas");
+      var ctx = canvas.getContext("2d");
+      var radius = canvas.height / 2;
+      ctx.translate(radius, radius);
+      radius = radius * 0.90
+      drawClock();
+      setInterval(drawClock, 1000);
 
-  function drawClock() {
-    drawFace(ctx, radius);
-    drawNumbers(ctx, radius);
-    drawTime(ctx, radius);
-}
-
-  function drawFace(ctx, radius) {
-    var grad;
-    ctx.beginPath();
-    ctx.arc(0, 0, radius, 0, 2*Math.PI);
-    ctx.fillStyle = 'white';
-    ctx.fill();
-    grad = ctx.createRadialGradient(0,0,radius*0.95, 0,0,radius*1.05);
-    grad.addColorStop(0, '#333');
-    grad.addColorStop(0.5, 'white');
-    grad.addColorStop(1, '#333');
-    ctx.strokeStyle = grad;
-    ctx.lineWidth = radius*0.1;
-    ctx.stroke();
-    ctx.beginPath();
-    ctx.arc(0, 0, radius*0.1, 0, 2*Math.PI);
-    ctx.fillStyle = '#333';
-    ctx.fill();
-  }
-
-  function drawNumbers(ctx, radius) {
-    var ang;
-    var num;
-    ctx.font = radius*0.15 + "px arial";
-    ctx.textBaseline="middle";
-    ctx.textAlign="center";
-    for(num = 1; num < 13; num++){
-      ang = num * Math.PI / 6;
-      ctx.rotate(ang);
-      ctx.translate(0, -radius*0.85);
-      ctx.rotate(-ang);
-      ctx.fillText(num.toString(), 0, 0);
-      ctx.rotate(ang);
-      ctx.translate(0, radius*0.85);
-      ctx.rotate(-ang);
+      function drawClock() {
+        drawFace(ctx, radius);
+        drawNumbers(ctx, radius);
+        drawTime(ctx, radius);
     }
-  }
-    function drawTime(ctx, radius){
-      var now = new Date();
-      var hour = now.getHours();
-      var minute = now.getMinutes();
-      var second = now.getSeconds();
-      //hour
-      hour=hour%12;
-      hour=(hour*Math.PI/6)+
-      (minute*Math.PI/(6*60))+
-      (second*Math.PI/(360*60));
-      drawHand(ctx, hour, radius*0.5, radius*0.07);
-      //minute
-      minute=(minute*Math.PI/30)+(second*Math.PI/(30*60));
-      drawHand(ctx, minute, radius*0.8, radius*0.07);
-      // second
-      second=(second*Math.PI/30);
-      drawHand(ctx, second, radius*0.9, radius*0.02);
-  }
 
-  function drawHand(ctx, pos, length, width) {
-      ctx.beginPath();
-      ctx.lineWidth = width;
-      ctx.lineCap = "round";
-      ctx.moveTo(0,0);
-      ctx.rotate(pos);
-      ctx.lineTo(0, -length);
-      ctx.stroke();
-      ctx.rotate(-pos);      
-}
+      function drawFace(ctx, radius) {
+        var grad;
+        ctx.beginPath();
+        ctx.arc(0, 0, radius, 0, 2*Math.PI);
+        ctx.fillStyle = 'white';
+        ctx.fill();
+        grad = ctx.createRadialGradient(0,0,radius*0.95, 0,0,radius*1.05);
+        grad.addColorStop(0, '#333');
+        grad.addColorStop(0.5, 'white');
+        grad.addColorStop(1, '#333');
+        ctx.strokeStyle = grad;
+        ctx.lineWidth = radius*0.1;
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.arc(0, 0, radius*0.1, 0, 2*Math.PI);
+        ctx.fillStyle = '#333';
+        ctx.fill();
+      }
 
-</script>
-<h5>Diffirent types of form</h5>
-  <form action="/action_page.html" method="post">
+      function drawNumbers(ctx, radius) {
+        var ang;
+        var num;
+        ctx.font = radius*0.15 + "px arial";
+        ctx.textBaseline="middle";
+        ctx.textAlign="center";
+        for(num = 1; num < 13; num++){
+          ang = num * Math.PI / 6;
+          ctx.rotate(ang);
+          ctx.translate(0, -radius*0.85);
+          ctx.rotate(-ang);
+          ctx.fillText(num.toString(), 0, 0);
+          ctx.rotate(ang);
+          ctx.translate(0, radius*0.85);
+          ctx.rotate(-ang);
+        }
+      }
+        function drawTime(ctx, radius){
+          var now = new Date();
+          var hour = now.getHours();
+          var minute = now.getMinutes();
+          var second = now.getSeconds();
+          //hour
+          hour=hour%12;
+          hour=(hour*Math.PI/6)+
+          (minute*Math.PI/(6*60))+
+          (second*Math.PI/(360*60));
+          drawHand(ctx, hour, radius*0.5, radius*0.07);
+          //minute
+          minute=(minute*Math.PI/30)+(second*Math.PI/(30*60));
+          drawHand(ctx, minute, radius*0.8, radius*0.07);
+          // second
+          second=(second*Math.PI/30);
+          drawHand(ctx, second, radius*0.9, radius*0.02);
+      }
+
+      function drawHand(ctx, pos, length, width) {
+          ctx.beginPath();
+          ctx.lineWidth = width;
+          ctx.lineCap = "round";
+          ctx.moveTo(0,0);
+          ctx.rotate(pos);
+          ctx.lineTo(0, -length);
+          ctx.stroke();
+          ctx.rotate(-pos);      
+    }
+
+    </script>
+    <h5 style="font-family: serif;">Diffirent types of form</h5>
+      <form action="/action_page.html" method="post">
+        <fieldset>
+          <legend>Cars</legend>
+        <select name="cars">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="fiat">Fiat</option>
+          <option value="audi">Audi</option>
+        </select>
+        <br>
+        Quantity:<br>
+        <input type="number" name="quantity" min="0" max="100" step="10" value="30">
+        <br><br>
+        <input type="Submit" onclick="alert('Congratulations')">
+        </fieldset>
+      </form>
+
+      <form action="/action_page.php">
+        First name:<br>
+        <input type="text" name="firstname" placeholder="First name" required>
+        <br>
+        Last name:<br>
+        <input type="text" name="lastname" placeholder="Last name" maxlength="10"><br>
+        Birthday:<br>
+        <input type="date" name="bday"><br>
+        E-mail:<br>
+        <input type="email" name="email" autocomplete="off"><br>
+        Telephone:<br>
+        <input type="tel" name="usrtel"><br>
+        Add your photo:<br>
+        <input type="file" name="myPhoto"><br>
+        Country code:<br>
+        <input type="text" name="country_code" pattern="[A-Za-z]" title="Three letter country code"><br>
+        Select a time:<br>
+        <input type="time" name="usr_time"><br>
+        Select a week:<br>
+        <input type="week" name="year_week"><br>
+        Add your homepage:<br>
+        <input type="url" name="homepage"><br>
+        Select your favorite color:<br>
+      <input type="color" name="favcolor" value="#ff0000"><br><br>
+      <input type="submit" formnovalidate value="Submit without validation">
+    </form>
+    <form>
+     
+    <form>
+      <input type="radio" name="gender" value="male" checked>Male<br>
+      <input type="radio" name="gender" value="female">Female<br>
+      <input type="radio" name="gender" value="other">Other<br>
+      <input type="image" src="img_submit.gif" alt="Submit" width="48" height="48">
+    </form>
+   
+    <form action="/my-handling-form-page" method="post">
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="user_name">
+    </div>
+    <div>
+      <label for="mail">E-mail:</label>
+      <input type="email" id="mail" name="user_mail">
+    </div>
+    <div>
+      <label for="msg">Message:</label>
+      <textarea id="msg" name="user_message"></textarea>
+    </div>
+    <div class="button">
+      <button type="submit">Send your message</button>
+    </div>
+    </form>
+
+    <form action="/action_page.php">
     <fieldset>
-      <legend>Cars</legend>
-    <select name="cars">
+      <legend>Personal information:</legend>
+      First name:<br>
+      <input type="text" name="firstname" placeholder="First name">
+      <br>
+      Last name:<br>
+      <input type="text" name="lastname" placeholder="Last name">
+      <br>
+      Telephone:<br>
+      <input type="tel" name="usrtel"><br><br>
+      <input type="submit" value="Submit">
+    </fieldset>
+    </form>
+
+    <form action="/action_page.php">
+    Enter your name:
+    <input name="firstname" type="text">
+    <br><br>
+    <input type="Submit">
+    </form>
+
+    <form action="/action_page.php">
+    <select name="cars" size="4" multiple>
       <option value="volvo">Volvo</option>
       <option value="saab">Saab</option>
       <option value="fiat">Fiat</option>
       <option value="audi">Audi</option>
-    </select>
-    <br>
-    Quantity:<br>
-    <input type="number" name="quantity" min="0" max="100" step="10" value="30">
-    <br><br>
-    <input type="Submit" onclick="alert('Congratulations')">
-  </fieldset>
-  </form>
+      </select>
+      <br>
+      <input type="color" name="favcolor" value="#ff0000"><br>
+      Quantity (between 1 and 4):<br>
+      <input type="number" name="quantity" min="1" max="4"><br><br>
+      <input type="submit">
+    </form>
 
-  <form action="/action_page.php">
-    First name:<br>
-    <input type="text" name="firstname" placeholder="First name" required>
-    <br>
-    Last name:<br>
-    <input type="text" name="lastname" placeholder="Last name" maxlength="10"><br>
-    Birthday:<br>
-    <input type="date" name="bday"><br>
-    E-mail:<br>
-    <input type="email" name="email" autocomplete="off"><br>
-    Telephone:<br>
-    <input type="tel" name="usrtel"><br>
-    Add your photo:<br>
-    <input type="file" name="myPhoto"><br>
-    Country code:<br>
-    <input type="text" name="country_code" pattern="[A-Za-z]" title="Three letter country code"><br>
-    Select a time:<br>
-    <input type="time" name="usr_time"><br>
-    Select a week:<br>
-    <input type="week" name="year_week"><br>
-    Add your homepage:<br>
-    <input type="url" name="homepage"><br>
-    Select your favorite color:<br>
-    <input type="color" name="favcolor" value="#ff0000"><br><br>
-    <input type="submit" formnovalidate value="Submit without validation">
-  </form>
-  <form>
-   
-  <form>
-    <input type="radio" name="gender" value="male" checked>Male<br>
-    <input type="radio" name="gender" value="female">Female<br>
-    <input type="radio" name="gender" value="other">Other<br>
-    <input type="image" src="img_submit.gif" alt="Submit" width="48" height="48">
-  </form>
- 
-  <form action="/my-handling-form-page" method="post">
-  <div>
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="user_name">
-  </div>
-  <div>
-    <label for="mail">E-mail:</label>
-    <input type="email" id="mail" name="user_mail">
-  </div>
-  <div>
-    <label for="msg">Message:</label>
-    <textarea id="msg" name="user_message"></textarea>
-  </div>
-  <div class="button">
-    <button type="submit">Send your message</button>
-  </div>
-  </form>
+    <form action="/action_page.php">
+      <textarea name="message" rows="10" cols="30">The cat was playing in the garden.</textarea>
+      <br>
+      <input type="submit">
+    </form>
 
-  <form action="/action_page.php">
-  <fieldset>
-    <legend>Personal information:</legend>
-    First name:<br>
-    <input type="text" name="firstname" placeholder="First name">
-    <br>
-    Last name:<br>
-    <input type="text" name="lastname" placeholder="Last name">
-    <br>
-    Telephone:<br>
-    <input type="tel" name="usrtel"><br><br>
-    <input type="submit" value="Submit">
-  </fieldset>
-  </form>
+    <form>
+      <input type="checkbox" name="vehicle1" value="Bike">I have a bike<br>
+      <input type="checkbox" name="vehicle2" value="Car">I have a car<br><br>
+      <input type="submit">
+    </form>
 
-  <form action="/action_page.php">
-  Enter your name:
-  <input name="firstname" type="text">
-  <br><br>
-  <input type="Submit">
-  </form>
+    <form action="/action_page.php">
+      Enter a date before 1980-01-01:<br><br>
+      <input type="date" name="bday" max="1979-12-31"><br><br>
+      Enter a date after 2000-01-01:<br><br>
+      <input type="date" name="bday" min="2000-01-02"><br><br>
+      <input type="submit">
+    </form>
 
-  <form action="/action_page.php">
-  <select name="cars" size="4" multiple>
-    <option value="volvo">Volvo</option>
-    <option value="saab">Saab</option>
-    <option value="fiat">Fiat</option>
-    <option value="audi">Audi</option>
-    </select>
-    <br>
-    <input type="color" name="favcolor" value="#ff0000"><br>
-    Quantity (between 1 and 4):<br>
-    <input type="number" name="quantity" min="1" max="4"><br><br>
-    <input type="submit">
-  </form>
+  <h6><span>Contact Me</span></h6>
+    <form>
+    <input name="name" type="text" /><br/>
+    <input name="email" type="email" /><br/>
+    <textarea name="message"></textarea>
+    <input type="submit" value="SEND" class="submit" />
+    </form>
 
-  <form action="/action_page.php">
-    <textarea name="message" rows="10" cols="30">The cat was playing in the garden.</textarea>
-    <br>
-    <input type="submit">
-  </form>
+  <p class="important">Paragraphs</p> <!-- Use <br /> to create a line break within a paragraph -->
 
-<form>
-  <input type="checkbox" name="vehicle1" value="Bike">I have a bike<br>
-  <input type="checkbox" name="vehicle2" value="Car">I have a car<br><br>
-  <input type="submit">
-</form>
-
-<form action="/action_page.php">
-  Enter a date before 1980-01-01:<br><br>
-  <input type="date" name="bday" max="1979-12-31"><br><br>
-  Enter a date after 2000-01-01:<br><br>
-  <input type="date" name="bday" min="2000-01-02"><br><br>
-  <input type="submit">
-</form>
-
-<form>
-<h6><span>Contact Me</span></h6>
-  <form>
-  <input name="name" type="text" /><br/>
-  <input name="email" type="email" /><br/>
-  <textarea name="message"></textarea>
-  <input type="submit" value="SEND" class="submit" />
-  </form>
-
-<p class="important">Paragraphs</p> <!-- Use <br /> to create a line break within a paragraph -->
-
-<!-- Wrap these around text you want to style -->
-  <b>Bold</b>
-  <em>Usually italics, sometimes bold</em>
-  <tt>Teletext</tt>
-  <cite>Citations - usally italics</cite>
-  <strong>Uasually bold, somtimes italics</strong>
-  <pre>Preformatted Text</pre>
-</body>
+  <!-- Wrap these around text you want to style -->
+    <b>Bold</b>
+    <em>Usually italics, sometimes bold</em>
+    <tt>Teletext</tt>
+    <cite>Citations - usally italics</cite>
+    <strong>Uasually bold, somtimes italics</strong>
+    <pre>Preformatted Text</pre>
+  </body>
 </html>
