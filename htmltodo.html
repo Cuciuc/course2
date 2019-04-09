@@ -33,7 +33,7 @@
       form {
         /* Just to center the form on the page */
         margin: 0 auto;
-        width: 400px;
+        width: 500px;
         /* To see the outline of the form */
         padding: 1em;
         border: 1px solid #CCC;
@@ -427,14 +427,104 @@
       <input type="date" name="bday" min="2000-01-02"><br><br>
       <input type="submit">
     </form>
-
-  <h6><span>Contact Me</span></h6>
+ <h6><span>Contact Me</span></h6>
     <form>
     <input name="name" type="text" /><br/>
     <input name="email" type="email" /><br/>
     <textarea name="message"></textarea>
     <input type="submit" value="SEND" class="submit" />
     </form>
+
+    <form action="/action_page.php">
+        <fieldset>
+          <legend>Заявка на рейс самолёта</legend>
+              First name:<br>
+              <input type="text" name="firstname" placeholder="First name">
+              <br>
+              Last name:<br>
+              <input type="text" name="lastname" placeholder="Last name">
+              <br>
+              Telephone:<br>
+              <input type="tel" name="usrtel"><br>
+              E-mail:<br>
+              <input type="email" name="email" autocomplete="off"><br>
+              Откуда:<br>
+              <input type="text" id="country" list="country_list">
+                <datalist id="country_list">
+                  <option value="AF">Afghanistan</option>
+                  <option value="AX">Åland Islands</option>
+                  <option value="AL">Albania</option>
+                  <option value="DZ">Algeria</option>
+                  <!-- more -->
+                </datalist><br>
+              Куда:<br>
+              <input type="text" id="country" list="country_list">
+                <datalist id="country_list">
+                  <option value="AF">Afghanistan</option>
+                  <option value="AX">Åland Islands</option>
+                  <option value="AL">Albania</option>
+                  <option value="DZ">Algeria</option>
+                  <!-- more -->
+              </datalist><br> 
+
+              Дата вылета:<br>
+              <input type="date" name="дата вылета" value="дата вылета"><br>
+              Время вылета:<br>
+              <input type="time" name="время вылета"><br>
+              Желаете билет в оба конца?: <br>
+              <input type="radio" name="ticket" value="Yes" checked>да<br>
+              <input type="radio" name="ticket" value="No">нет<br>
+              Количество мест:<br>
+              <input type="number" name="количество" min="1" max="6"><br><br>
+              Количество билетов:<br>
+              <input type="number" name="количество билетов" min="1" max="100"><br>
+              Пассажиры:<br>
+              <input type="checkbox" name="Пассажиры" value="Взрослые">Взрослые:<br>
+              <input type="checkbox" name="Пассажиры" value="Дети">Дети:<br>
+              <input type="checkbox" name="Пассажиры" value="Младенцы">Младенцы:<br>
+              Пол:<br>
+              <input type="radio" name="gender" value="male"> Male<br>
+              <input type="radio" name="gender" value="female" checked> Female<br>
+              <input type="radio" name="gender" value="other"> Other<br><br>
+              Наличие береминости:<br>
+              <select name="беременость">
+                  <option value="нет">береминости нет</option>
+                  <option value="12">до 12 недель</option>
+                  <option value="24">до 24 недель</option>
+                  <option value="31">до 31 недель</option>
+              </select><br>
+              Class:<br>
+              <input type="checkbox" name="class" value="A">Эконом<br>
+              <input type="checkbox" name="class" value="B">Премиум эконом<br>
+              <input type="checkbox" name="class" value="C">Эконом<br>
+              Место у окна:<br>
+              <input type="radio" name="место" value="возле окна" checked>Yes<br>
+              <input type="radio" name="место" value="у прохода">No<br>
+              Оформить страховку:<br>
+              <select name="страховка">
+                <option value="Оформить">да</option>
+                <option value="есть страховка">нет</option><br><br>
+              </select><br>
+              Что желаете заказать:<br>
+              <input type="checkbox" name="заказ" value="булочка">булочка<br>
+              <input type="checkbox" name="заказ" value="напиток">напиток<br>
+              <input type="checkbox" name="заказ" value="чай">чай<br>
+              <input type="checkbox" name="заказ" value="кофе">кофе<br>
+              Заказать такси по прилёту:
+              <select name="такси">
+                <option value="заказать такси">да</option>
+                <option value="нет">нет</option>
+                <option value="не знаю">не знаю</option><br><br>
+              </select><br>
+              Адрес назначения:<br>
+              <input type="text" name="адресс"><br><br>
+              Примичанья к брони:<br>
+              <textarea name="примечанья"></textarea><br><br>
+              <input type="submit" value="забронирвать">
+        </fieldset>
+    </form>
+
+ 
 
   <p class="important">Paragraphs</p> <!-- Use <br /> to create a line break within a paragraph -->
 
