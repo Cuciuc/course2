@@ -43,14 +43,25 @@
       form div + div {
         margin-top: 1em;
       }
-
+      form.homework {
+      width: 100%;
+      padding-top: 50px;
+      padding-right: 30px;
+      padding-bottom: 50px;
+      padding-left: 80px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      background-color: #3CBC8D;
+      border-color: red green yellow blue;
+      border-style: 5px dotted solid;
+      color: white;
+      }
       label {
         /* To make sure that all labels have the same size and are properly aligned */
         display: inline-block;
         width: 90px;
         text-align: right;
       }
-
       input, textarea {
         /* To make sure that all text fields have the same font settings
          By default, textareas have a monospace font */
@@ -297,7 +308,7 @@
 
     </script>
     <h5 style="font-family: serif;">Diffirent types of form</h5>
-    <form action="./action_page.html" method="get">
+    <form action="./action_page.html" method="get" target="_parent">
       <fieldset>
         <legend>Cars</legend>
         <select name="students">
@@ -312,7 +323,7 @@
         Course:<br>
         <input type="number" name="course" min="1" max="4" value="1">
         <br><br>
-        <input type="submit" value="отправить заявку">
+        <input type="submit" value="отправить заявку" target="_parent">
         <input type="button" value="проверить на складе">
         <button type="button">My Favorite text</button>
         <button type="submit" value="отправить">Send request</button>
@@ -388,10 +399,9 @@
     </form>
 
     <form action="/action_page.php">
-    Enter your name:
-    <input name="firstname" type="text">
-    <br><br>
-    <input type="Submit">
+      Enter your name:
+      <input name="firstname" type="text"><br><br>
+      <input type="Submit">
     </form>
 
     <form action="/action_page.php">
@@ -429,13 +439,13 @@
     </form>
  <h6><span>Contact Me</span></h6>
     <form>
-    <input name="name" type="text" /><br/>
-    <input name="email" type="email" /><br/>
-    <textarea name="message"></textarea>
-    <input type="submit" value="SEND" class="submit" />
+      <input name="name" type="text" /><br/>
+      <input name="email" type="email" /><br/>
+      <textarea name="message"></textarea>
+      <input type="submit" value="SEND" class="submit" />
     </form>
 
-    <form action="/action_page.php">
+    <form class="homework" action="./action_page.php" method="POST">
         <fieldset>
           <legend>Заявка на рейс самолёта</legend>
               First name:<br>
@@ -465,8 +475,7 @@
                   <option value="AL">Albania</option>
                   <option value="DZ">Algeria</option>
                   <!-- more -->
-              </datalist><br> 
-
+                </datalist><br> 
               Дата вылета:<br>
               <input type="date" name="departure date" value="departure date"><br>
               Время вылета:<br>
@@ -520,20 +529,17 @@
                 <option value="cash">cash</option>
               </select><br>
               User ID :<br> 
-              <input type = "text" name = "user_id" /><br>
+              <input type="text" name="user_id" /><br>
               Password:<br> 
               <input type = "password" name = "password" /><br>
               Примичанья к брони:<br>
               <textarea name="remark"></textarea><br><br>
-              <input type = "submit" name = "submit" value = "Submit" />
-              <input type = "reset" name = "reset"  value = "Reset" />
-              <input type = "button" name = "ok" value = "OK" />
+              <input type="submit" name="submit" value="Submit" />
+              <input type="reset" name="reset"  value="Reset" />
+              <input type="button" name="ok" value="OK" />
         </fieldset>
     </form>
-
- 
-
-  <p class="important">Paragraphs</p> <!-- Use <br /> to create a line break within a paragraph -->
+    <p class="important">Paragraphs</p> <!-- Use <br /> to create a line break within a paragraph -->
 
   <!-- Wrap these around text you want to style -->
     <b>Bold</b>
