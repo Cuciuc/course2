@@ -468,59 +468,66 @@
               </datalist><br> 
 
               Дата вылета:<br>
-              <input type="date" name="дата вылета" value="дата вылета"><br>
+              <input type="date" name="departure date" value="departure date"><br>
               Время вылета:<br>
-              <input type="time" name="время вылета"><br>
+              <input type="time" name="departure time"><br>
               Желаете билет в оба конца?: <br>
-              <input type="radio" name="ticket" value="Yes" checked>да<br>
-              <input type="radio" name="ticket" value="No">нет<br>
+              <input type="radio" name="ticket" value="round-trip" checked>да<br>
+              <input type="radio" name="ticket" value="one way">нет<br>
               Количество мест:<br>
-              <input type="number" name="количество" min="1" max="6"><br><br>
+              <input type="number" name="quantity" min="1" max="6"><br><br>
               Количество билетов:<br>
-              <input type="number" name="количество билетов" min="1" max="100"><br>
+              <input type="number" name="quantity of tickets" min="1" max="100"><br>
               Пассажиры:<br>
-              <input type="checkbox" name="Пассажиры" value="Взрослые">Взрослые:<br>
-              <input type="checkbox" name="Пассажиры" value="Дети">Дети:<br>
-              <input type="checkbox" name="Пассажиры" value="Младенцы">Младенцы:<br>
+              <input type="checkbox" name="passangers" value="adults">Взрослые:<br>
+              <input type="checkbox" name="passangers" value="children">Дети:<br>
+              <input type="checkbox" name="passangers" value="baby">Младенцы:<br>
               Пол:<br>
               <input type="radio" name="gender" value="male"> Male<br>
               <input type="radio" name="gender" value="female" checked> Female<br>
               <input type="radio" name="gender" value="other"> Other<br><br>
               Наличие береминости:<br>
-              <select name="беременость">
-                  <option value="нет">береминости нет</option>
+              <select name="pregnancy">
+                  <option value="no">береминости нет</option>
                   <option value="12">до 12 недель</option>
                   <option value="24">до 24 недель</option>
                   <option value="31">до 31 недель</option>
               </select><br>
-              Class:<br>
-              <input type="checkbox" name="class" value="A">Эконом<br>
-              <input type="checkbox" name="class" value="B">Премиум эконом<br>
-              <input type="checkbox" name="class" value="C">Эконом<br>
-              Место у окна:<br>
-              <input type="radio" name="место" value="возле окна" checked>Yes<br>
-              <input type="radio" name="место" value="у прохода">No<br>
               Оформить страховку:<br>
-              <select name="страховка">
-                <option value="Оформить">да</option>
-                <option value="есть страховка">нет</option><br><br>
-              </select><br>
+              <select name="insurance">
+                <option value="purchase">да</option>
+                <option value="No">нет</option><br><br>
+              </select><br><br>
+              In case of emergency:<hr>
+              Name of local friend or relative:<br>
+              <input type="text" name="name"><br>
               Что желаете заказать:<br>
-              <input type="checkbox" name="заказ" value="булочка">булочка<br>
-              <input type="checkbox" name="заказ" value="напиток">напиток<br>
-              <input type="checkbox" name="заказ" value="чай">чай<br>
-              <input type="checkbox" name="заказ" value="кофе">кофе<br>
+              <input type="checkbox" name="order" value="roll">булочка<br>
+              <input type="checkbox" name="order" value="drink">напиток<br>
+              <input type="checkbox" name="order" value="tea">чай<br>
+              <input type="checkbox" name="order" value="coffee">кофе<br>
               Заказать такси по прилёту:
-              <select name="такси">
-                <option value="заказать такси">да</option>
-                <option value="нет">нет</option>
-                <option value="не знаю">не знаю</option><br><br>
+              <select name="taxi">
+                <option value="take taxi">да</option>
+                <option value="no">нет</option>
+                <option value="don't know">не знаю</option><br><br>
               </select><br>
               Адрес назначения:<br>
-              <input type="text" name="адресс"><br><br>
+              <input type="text" name="adress"><br><br>
+              Method of payment:<br>
+              <select name="paymant">
+                <option value="card">card</option>
+                <option value="cash">cash</option>
+              </select><br>
+              User ID :<br> 
+              <input type = "text" name = "user_id" /><br>
+              Password:<br> 
+              <input type = "password" name = "password" /><br>
               Примичанья к брони:<br>
-              <textarea name="примечанья"></textarea><br><br>
-              <input type="submit" value="забронирвать">
+              <textarea name="remark"></textarea><br><br>
+              <input type = "submit" name = "submit" value = "Submit" />
+              <input type = "reset" name = "reset"  value = "Reset" />
+              <input type = "button" name = "ok" value = "OK" />
         </fieldset>
     </form>
 
