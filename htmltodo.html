@@ -104,6 +104,7 @@
 
         /* To give enough room to type some text */
         height: 5em;
+        resize: none;
       }
 
       .button {
@@ -185,7 +186,8 @@
       <!-- First group of tags -->
       <div style = "color:red">
     <p>
-      <a href="course2.asp"><img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;border:0;">
+      <a href="course2.asp">
+        <img src="smiley.gif" alt="HTML tutorial" style="width: 42px; height: 42px; border: 0;">
       </a>
     </p>
 
@@ -463,14 +465,14 @@
       <input type="submit" value="SEND" class="submit" />
     </form>
 
-    <form class="homework" action="./action_page.php" method="POST">
+    <form class="homework" action="./action_page.html" method="GET">
         <fieldset>
           <legend>Заявка на рейс самолёта</legend>
               First name:<br>
-              <input type="text" name="firstname" placeholder="First name">
+              <input type="text" name="firstname" placeholder="Irina" required  maxlength="5">
               <br>
               Last name:<br>
-              <input type="text" name="lastname" placeholder="Last name">
+              <input type="text" name="lastname" value="Cuciuc" placeholder="Last name" readonly>
               <br>
               Telephone:<br>
               <input type="tel" name="usrtel"><br>
@@ -499,8 +501,17 @@
               Время вылета:<br>
               <input type="time" name="departure time"><br>
               Желаете билет в оба конца?: <br>
-              <input type="radio" name="ticket" value="round-trip" checked>да<br>
-              <input type="radio" name="ticket" value="one way">нет<br>
+              <label for="ticketyes">Round-trip</label>
+              <input type="radio" name="ticket" id="ticketyes" value="round-trip" checked><br>
+              <label for="ticket2">One way</label>
+              <input type="radio" name="ticket" id="ticket2" value="one way"><br>
+              
+              <label for="ticket3">I don't know</label>
+              <input type="radio" name="ticket" id="ticket3" value="False"><br>
+              
+              <label>
+                <input type="radio" name="ticket" disabled>Latter</label><br>
+              
               Количество мест:<br>
               <input type="number" name="quantity" min="1" max="6"><br><br>
               Количество билетов:<br>
@@ -514,11 +525,11 @@
               <input type="radio" name="gender" value="female" checked> Female<br>
               <input type="radio" name="gender" value="other"> Other<br><br>
               Наличие береминости:<br>
-              <select name="pregnancy">
-                  <option value="no">береминости нет</option>
-                  <option value="12">до 12 недель</option>
-                  <option value="24">до 24 недель</option>
-                  <option value="31">до 31 недель</option>
+              <select name="pregnancy" multiple>
+                <option value="no">береминости нет</option>
+                <option value="12">до 12 недель</option>
+                <option value="24" selected>до 24 недель</option>
+                <option value="31">до 31 недель</option>
               </select><br>
               Оформить страховку:<br>
               <select name="insurance">
@@ -551,7 +562,7 @@
               Password:<br> 
               <input type = "password" name = "password" /><br>
               Примичанья к брони:<br>
-              <textarea name="remark"></textarea><br><br>
+              <textarea name="remark" resize="false" placeholder="Введите текст">Здраствуйте меня зовут Ирина.</textarea><br><br>
               <input type="submit" name="submit" value="Submit" />
               <input type="reset" name="reset"  value="Reset" />
               <input type="button" name="ok" value="OK" />
