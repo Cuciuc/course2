@@ -1,2 +1,0 @@
-# course2
-course
