@@ -207,3 +207,24 @@ div.transbox p {
   margin: 5%;
   font-weight: bold;
   color: #000000;
+
+.box-orange {
+  position: relative;
+  background: orange;
+  width: 100px;
+  height: 100px;
+  right: 5px;    // 5px relative to the most-right of parent
+}
+.container {
+  position: absolute;
+  background: lightgray;
+  border: 5px solid red;
+  padding: 20px;
+}
+
+.box-blue {
+  background: lightskyblue;
+  height: 100px;
+  width: 100px; 
+  position: static;   // Declared as static
+}
