@@ -181,6 +181,7 @@ button {
   color: black;
 }
 img {
+  float: none;
   opacity: 0.5;
   filter: alpha(opacity=50); /* For IE8 and earlier */
 }
@@ -189,24 +190,6 @@ img:hover {
   opacity: 1.0;
   filter: alpha(opacity=100); /* For IE8 and earlier */
 }
-
-div.background {
-  background: url(terre.jpg) repeat;
-  border: 2px solid black;
-}
-
-div.transbox {
-  margin: 30px;
-  background-color: #ffffff;
-  border: 1px solid black;
-  opacity: 0.6;
-  filter: alpha(opacity=60); /* For IE8 and earlier */
-}
-
-div.transbox p {
-  margin: 5%;
-  font-weight: bold;
-  color: #000000;
 
 .box-orange {
   position: relative;
@@ -220,6 +203,7 @@ div.transbox p {
   background: lightgray;
   border: 5px solid red;
   padding: 20px;
+  float: left;
 }
 
 .box-blue {
@@ -227,4 +211,44 @@ div.transbox p {
   height: 100px;
   width: 100px; 
   position: static;   // Declared as static
+}
+.div1 {
+  float: left;
+  width: 100px;
+  height: 50px;
+  margin: 10px;
+  border: 3px solid #73AD21;
+}
+
+.div2 {
+  border: 1px solid red;
+}
+
+.div3 {
+  float: left;
+  width: 100px;
+  height: 50px;
+  margin: 10px;
+  border: 3px solid #73AD21;
+}
+
+.div4 {
+  border: 1px solid red;
+  clear: left;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
