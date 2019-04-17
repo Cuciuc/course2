@@ -252,3 +252,11 @@ img:hover {
   clear: both;
   display: table;
 }
+p.font {
+  font-family: Times New Roman;
+  font-weight: lighter;
+  font-stretch: extra-expanded;
+  font-style: oblique;
+  font-size: xx-large;
+  font-size-adjust: 0.5;
+}
