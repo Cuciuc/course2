@@ -89,3 +89,24 @@ article img {
 	font-size: 14px;
 }
 
+.link {
+	border: none;
+	text-decoration: inherit;
+	color: inherit;
+	font-size: 1.5rem;
+}
+
+.author {
+	color: #646d8d;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	text-decoration: none;
+	border: none;
+}
+
+.more {
+	font-size: 1em;
+	text-decoration: none;
+	color: #4585ff;
+	padding: 9px 18px;
+}
