@@ -82,7 +82,7 @@ article img {
 	border-radius: 12px;
 }
 
-div a {
+.post-category a {
 	text-decoration: none;
 	text-align: center;
 	color: #fff;
