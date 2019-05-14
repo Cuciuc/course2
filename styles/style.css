@@ -180,6 +180,7 @@ button {
 .menu a {
   color: black;
 }
+
 img {
   float: none;
   opacity: 0.5;
@@ -198,6 +199,7 @@ img:hover {
   height: 100px;
   right: 5px;    // 5px relative to the most-right of parent
 }
+
 .container {
   position: absolute;
   background: lightgray;
