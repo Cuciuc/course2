@@ -202,7 +202,7 @@ article img {
 	margin-left: auto;
 	font-weight: 600;
 }
-
+/*footer style*/
 footer {
 	background-color: #646d8d;
 }
@@ -213,7 +213,8 @@ footer {
 }
 
 .flex-container {
-	justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
 	margin: 0px;
 	padding: 20px;
 }
