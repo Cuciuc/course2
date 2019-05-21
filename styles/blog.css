@@ -2,6 +2,7 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	padding: 0;
 	margin: 0;
+	font-size: 14px;
 }
 
 header {
@@ -159,6 +160,7 @@ article img {
 	border-bottom: 2px solid #f6f7fb;
 	padding: 10px 15px;
 	margin: 0;
+	color: #646d8d;
 }
 .widget-content ul {
 	list-style: none;
@@ -177,10 +179,15 @@ article img {
 
 .widget-content {
 	padding: 10px 15px;
+	color: #646d8d;
 }
 
 .widget-content a {
 	color: #4585ff;
+}
+
+.widget .tag-cloud {
+	
 }
 
 .tag-cloud {
@@ -204,7 +211,7 @@ article img {
 }
 /*footer style*/
 footer {
-	background-color: #646d8d;
+	background-color: #3b4569;
 }
 
 .nav-menu {
@@ -217,15 +224,32 @@ footer {
 	flex-wrap: wrap;
 	margin: 0px;
 	padding: 20px;
+	width: calc(20% - 10px);
+	color: #646d8d;
+}
+
+.flex-container h6 {
+	color: white;
+	font-size: 1em;
 }
 
 p {
 	display: block;
 	margin: 0;
+	color: #646d8d;
 }
 
 .row {
-	background-color: #ffffff80;
+	background-color: #262d44;
 	text-align: left;
 	margin: 15px;
+	color: #646d8d;
+}
+
+ul a {
+	color: #646d8d;;
+}
+
+.flex-container .widget-title {
+	border: none;
 }
