@@ -3,30 +3,91 @@
 <head>
 	<title>Blog</title>
 	<link href="./styles/blog.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 </head>
 <body>
+	<!-- begin header section -->
 	<header>
+		<div class=topbar-links>
+			<h6 style=" color: #ffffff; text-align: left">
+				<a href="dashboard">New listing</a>
+			</h6>
+			<div class="icon">
+				<i class=" fab fa-twitter-square"></i>
+			</div>
+			<div class="icon">
+				<i class="fab fa-facebook-square"></i>
+			</div>
+			<div class="icon">
+				<i class="fab fa-linkedin"></i>
+			</div>
+		<!-- logo -->
+		</div>
 		<a class="logo" href="" >
 			<img src="./images/logo.svg" alt="logo">
 		</a>
+		<!-- end logo -->
+		<!-- navigation header -->
 		<nav>
-			<ul style="list-style-type: none">
-				<li><a href="#home">Home</a></li>
+			<ul style="list-style-type: none" id="menu">
+				<li>
+					<a href="#home">Home</a>
+					<ul class="subnav">
+						<li>
+							<a href="#">Hero Variations</a>
+						</li>
+						<li>
+							<a href="#">Headers</a>
+						</li>
+						<li>
+							<a href="#">Section</a>
+							<ul class="subnav">
+								<li>
+									<a href="#">2Hero Variations</a>
+								</li>
+								<li>
+									<a href="#">2Headers</a>
+								</li>
+								<li>
+									<a href="#">2Section</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
 				<li><a href="#Listings">Listings</a></li>
 				<li><a href="#Members">Members</a></li>
-				<li><a href="#Mega">Mega menu</a></li>
+				<li>
+					<a href="#Mega">Mega menu</a>
+					<ul class="subnav">
+						<li>
+							<a href="#">2Hero Variations</a>
+						</li>
+						<li>
+							<a href="#">2Headers</a>
+						</li>
+						<li>
+							<a href="#">2Section</a>
+						</li>
+					</ul>
+				</li>
 				<li><a href="#Pages">Pages</a></li>
 				<li><a href="#Blog">Blog</a></li>
 				<li><a href="#Contacts">Contacts</a></li>
 			</ul>
 		</nav>
 		<div class="clearfix"></div>
+		<!-- end navigation header -->
 	</header>
+	<!-- end header section -->
+	<!-- main section -->
 	<div class="breadcrumbs"></div>
 	<div class="wrapper">
 		<div class="container">
 			<main class="main">
+				<!-- all articles -->
 				<div class="articles">
+					<!-- articles item -->
 					<article class="item">
 						<a class="preview" href="blog_item.html">
 							<img src="./images/blog-5-700x400.jpg" alt="Learn How to Build a Cinder Block Wall">
@@ -42,7 +103,8 @@
 						</h4>
 						<a class="more" href="#" title="Read more">Read more</a>
 					</article>
-				
+					<!-- end articles item -->
+					<!-- articles item -->
 					<article class="item">
 						<a class="preview" href="blog-2.html">
 							<img src="./images/blog-2-700x400.jpg" alt="5 Essential Steps for Buying an Investment">
@@ -60,7 +122,8 @@
 						</h4>
 						<a class="more" href="#" title="Read more">Read more</a>
 					</article>
-				
+					<!-- end article item -->
+					<!-- article's item -->
 					<article class="item">
 						<a class="preview" href="Scandinavian-apartment.html">
 							<img src="./images/Scandinavian-apartment-1-700x400.jpg" alt="Different Interiors">
@@ -77,7 +140,8 @@
 						</h4>
 						<a class="more" href="#" title="Read more">Read more</a>
 					</article>
-				
+					<!-- end article's item -->
+					<!-- article item -->
 					<article class="item">
 						<a class="preview" href="blog-3-700x400.html">
 							<img src="./images/blog-3-700x400.jpg" alt="How to Choose a real Estate Agent?">
@@ -94,7 +158,8 @@
 						</h4>
 						<a class="more" href="#" title="Read more">Read more</a>
 					</article>
-				
+					<!-- end article's item -->
+					<!-- article item -->
 					<article class="item">
 						<a class="preview" href="blog-7-700x400.html">
 							<img src="./images/blog-7-700x400.jpg" alt="Markup: HTML Tags and Formatting">
@@ -110,7 +175,8 @@
 						</h4>
 						<a class="more" href="#" title="Read more">Read more</a>
 					</article>
-				
+					<!-- end article's item -->
+					<!-- article item -->
 					<article class="item">
 						<a class="preview" href="photo-1475855581690-80accde3ae2b-e1554204674475-700x400.html">
 							<img src="./images/photo-1475855581690-80accde3ae2b-e1554204674475-700x400.jpeg" alt="How Do Mortgage Lenders Decide If You’re Creditworthy?">
@@ -127,16 +193,21 @@
 						<a class="more" href="#" title="Read more">Read more
 						</a>
 					</article>
+					<!-- end article's item -->
 				</div>
-
+				<!-- end all articles-->
+				<!-- begin pagination -->
 				<div class="component_inner">
 					<div class="component_counter">
 					0-6 of 6 
 					</div>
 				</div>
-				
+				<!-- end pagination -->
 			</main>
+			<!-- end main -->
+			<!-- begin sidebar -->
 			<aside class="sidebar">
+				<!-- begin widget -->
 				<div class="widget">
 					<h4 class="widget-title">Trending Posts</h4>
 					<div class="widget-content">
@@ -164,6 +235,8 @@
 						</ul>
 					</div>
 				</div>
+				<!-- end widget -->
+				<!-- begin widget -->
 				<div class="widget">
 					<h4 class="widget-title">Blog search</h4>
 					<div class="widget-content">
@@ -177,7 +250,8 @@
 						</form>
 					</div>
 				</div>
-
+				<!-- end widget -->
+				<!-- begin widget -->
 				<div class="widget">
 					<h4 class="widget-title">Links</h4>
 					<div class="widget-content">
@@ -197,7 +271,8 @@
 						</ul>
 					</div>
 				</div>
-
+				<!-- end widget -->
+				<!-- begin widget -->
 				<div class="calendar">
 					<div class="widget">
 						<h4 class="widget-title">Calendar</h4>
@@ -275,6 +350,8 @@
 						</div>
 					</div>
 				</div>
+				<!-- end widget -->
+				<!-- begin widget -->
 				<div class="widget">
 					<h4 class="widget-title">Tags</h4>
 					<div class="widget-content">
@@ -286,6 +363,8 @@
 						</div>
 					</div>
 				</div>
+				<!-- end widget -->
+				<!-- begin widget -->
 				<div class="widget">
 					<h4 class="widget-title">Archives</h4>
 					<div class="widget-content">
@@ -293,36 +372,37 @@
 							<li>
 								<div class="widget-wrapper">
 								<a href="https://demo.wealty.co/2017/12">December 2017</a>
-								<span class="post_count"> 4 </span>
+								<span class="post-count"> 4 </span>
 								</div>
 							</li>
 							<li>
 								<div class="widget-wrapper">
 								<a href="https://demo.wealty.co/2017/11">November 2017</a>
-								<span class="post_count"> 1 </span>
+								<span class="post-count"> 1 </span>
 								</div>
 							</li>
 							<li>
 							<div class="widget-wrapper">
 								<a href="https://demo.wealty.co/2017/08">August 2017</a>
-								<span class="post_count"> 1 </span>
+								<span class="post-count"> 1 </span>
 								</div>
 							</li>
 						</ul>
 					</div>
 				</div>
+				<!-- end widget -->
 			</aside>
 		</div>
 		<div class="clearfix"></div>
 	</div>
-
+	<!-- end sidebar -->
+	<!-- begin footer -->
 	<footer>
 		<div class="nav-menu">
 			<div class="flex-container">
 				<div>
 					<h6 style="text-align: left" class="custom"> About us</h6>
-						<p>Our agents are local market experts and skilled negotiators. We're accountable to deliver a result you're happy with and will never pressure you to make an easy sale.
-						</p>
+					<p>Our agents are local market experts and skilled negotiators. We're accountable to deliver a result you're happy with and will never pressure you to make an easy sale.</p>
 				</div>
 			</div>
 			<div class="flex-container">
@@ -364,6 +444,16 @@
 				</div>
 			<div class="flex-container">
 				<h6>Social</h6>
+				<div>
+					<div class="icon">
+						<i class=" fab fa-twitter">
+						</i>
+					</div>
+					<div class="icon">
+						<i class="fab fa-linkedin">
+						</i>
+					</div>
+				<div>
 			</div>
 		</div>
 		<div class="row">2019 Wealty, Inc. All right reserved</div>
