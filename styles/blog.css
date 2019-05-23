@@ -87,11 +87,15 @@ nav ul {
 	width: 30%;
 }
 
+.wrapper {
+	background: #f6f7fb;
+}
 .articles {
 	display: flex;
 	flex-wrap: wrap;
 }
 
+/* articles style*/
 .item {
 	background: white;
 	width: calc(50% - 30px);
@@ -110,10 +114,6 @@ article img {
 	box-sizing: border-box;
 	border-radius: 12px;
 	margin-right: 10px;
-}
-
-.wrapper {
-	background: #f6f7fb;
 }
 
 .post-category {
